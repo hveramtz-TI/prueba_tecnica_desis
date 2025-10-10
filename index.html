@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Productos</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Formulario de Producto</h1>
+                <form id="formProducto" autocomplete="off" class="contenedor-inputs">
+                    <div class="row">
+                        <div class="label-input">
+                            <label for="codigo">Código</label>
+                            <input type="text" id="codigo" name="codigo">
+                        </div>
+                        <div class="label-input">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label-input">
+                            <label for="bodega">Bodega</label>
+                            <select id="bodega" name="bodega"></select>
+                        </div>
+
+                        <div class="label-input">
+                            <label for="sucursal">Sucursal</label>
+                            <select id="sucursal" name="sucursal"></select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="label-input">
+                            <label for="moneda">Moneda</label>
+                            <select id="moneda" name="moneda"></select>
+                        </div>
+
+                        <div class="label-input">
+                            <label for="precio">Precio</label>
+                            <input type="text" id="precio" name="precio">
+                        </div>
+                    </div>
+                    <div class="material-selection">
+                        <legend>Material del Producto:</legend>
+                        <div class="checkbox-list">
+                            <label><input type="checkbox" name="material[]" value="Plástico"> Plástico</label>
+                            <label><input type="checkbox" name="material[]" value="Metal"> Metal</label>
+                            <label><input type="checkbox" name="material[]" value="Madera"> Madera</label>
+                            <label><input type="checkbox" name="material[]" value="Vidrio"> Vidrio</label>
+                            <label><input type="checkbox" name="material[]" value="Textil"> Textil</label>
+                        </div>
+                    </div>
+
+
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion"></textarea>
+
+                    <button type="button" id="guardar">Guardar Producto</button>
+                </form>
+        </div>
+    </div>
+    <script src="assets/app.js"></script>
+</body>
+</html>
