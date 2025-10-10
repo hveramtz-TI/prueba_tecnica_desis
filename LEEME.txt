@@ -1,0 +1,39 @@
+# Instrucciones de Instalación - Registro de Productos
+
+## Requisitos
+- PHP: 8.4.13
+- PostgreSQL: 18.0 (x86_64-windows, msvc-19.44.35217, 64-bit)
+
+## Pasos para instalar y ejecutar el proyecto
+
+1. **Clona o descarga este repositorio en tu equipo.**
+
+2. **Configura la base de datos:**
+   - Crea una base de datos en PostgreSQL (por ejemplo, `productos_db`).
+   - Ejecuta el script `database/estructura.sql` en tu base de datos para crear las tablas y datos de ejemplo.
+
+3. **Configura la conexión a la base de datos:**
+   - Edita el archivo `api/conexion.php` y coloca tu usuario y contraseña de PostgreSQL.
+
+4. **Inicia el servidor PHP:**
+   - Abre una terminal en la raíz del proyecto y ejecuta:
+     ```
+     php -S localhost:8000
+     ```
+
+5. **Accede a la aplicación:**
+   - Abre tu navegador y entra a:  
+     `http://localhost:8000/index.html`
+
+6. **Prueba la conexión:**
+   - Puedes verificar la conexión a la base de datos accediendo a:  
+     `http://localhost:8000/api/test_conexion.php`
+
+## Notas
+- Si tienes problemas de conexión, asegúrate de que la extensión `pdo_pgsql` esté habilitada en tu archivo `php.ini`.
+- Para desarrollo, los endpoints permiten CORS desde cualquier origen.
+
+## Versiones utilizadas
+- PHP: 8.4.13
+- PostgreSQL: 18.0 (x86_64-windows, msvc-19.44.35217, 64-bit)
+
