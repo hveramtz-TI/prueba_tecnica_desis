@@ -1,11 +1,3 @@
--- Datos de ejemplo para bodegas
-INSERT INTO bodegas (nombre) VALUES ('Bodega Central'), ('Bodega Norte'), ('Bodega Sur');
-
--- Datos de ejemplo para sucursales
-INSERT INTO sucursales (nombre) VALUES ('Sucursal Santiago'), ('Sucursal Valparaíso'), ('Sucursal Concepción');
-
--- Datos de ejemplo para monedas
-INSERT INTO monedas (nombre) VALUES ('Peso Chileno'), ('Dólar'), ('Euro');
 -- Estructura de la base de datos para el registro de productos
 -- Script para PostgreSQL
 -- Ejecuta esto en psql o PgAdmin
@@ -39,3 +31,12 @@ CREATE TABLE IF NOT EXISTS productos (
     material VARCHAR(100),
     descripcion VARCHAR(1000)
 );
+
+-- Datos de ejemplo para bodegas
+INSERT INTO bodegas (nombre) VALUES ('Bodega Central'), ('Bodega Norte'), ('Bodega Sur');
+
+-- Datos de ejemplo para sucursales
+INSERT INTO sucursales (nombre) VALUES ('Sucursal Santiago'), ('Sucursal Valparaíso'), ('Sucursal Concepción');
+
+-- Datos de ejemplo para monedas
+INSERT INTO monedas (nombre) VALUES ('Peso Chileno'), ('Dólar'), ('Euro');
