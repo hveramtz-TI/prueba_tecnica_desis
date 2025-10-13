@@ -2,9 +2,9 @@
 // Conexión PDO a PostgreSQL
 // Cambia los valores de usuario y contraseña según tu entorno local
 $host = 'localhost';
-$db = 'productos_db';
+$db = 'postgres';
 $user = 'postgres'; // Cambia por tu usuario de PostgreSQL
-$pass = '1234';     // Cambia por tu contraseña de PostgreSQL
+$pass = 'Hv2725502';     // Cambia por tu contraseña de PostgreSQL
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC

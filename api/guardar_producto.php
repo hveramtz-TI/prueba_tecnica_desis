@@ -1,7 +1,7 @@
 <?php
 // Recibe datos del formulario y guarda el producto en la base de datos con validaciones
 header('Content-Type: application/json');
-require_once '../database/conexion.php';
+require_once 'conexion.php';
 
 function respuesta($exito, $mensaje) {
     echo json_encode(['exito'=>$exito, 'mensaje'=>$mensaje]);
