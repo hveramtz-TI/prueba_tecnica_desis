@@ -9,11 +9,12 @@
 1. **Clona o descarga este repositorio en tu equipo.**
 
 2. **Configura la base de datos:**
-   - Crea una base de datos en PostgreSQL (por ejemplo, `productos_db`).
-   - Ejecuta el script `database/estructura.sql` en tu base de datos para crear las tablas y datos de ejemplo.
+   - Ejecuta el script `SQL/estructura.sql` con psql o PgAdmin: crea la base de datos `productos_db`, las tablas y los datos de ejemplo. Si `productos_db` ya existe, el script la recrea desde cero (se pierden los datos guardados).
 
 3. **Configura la conexión a la base de datos:**
-   - Edita el archivo `api/conexion.php` y coloca tu usuario y contraseña de PostgreSQL.
+   - Copia el archivo `api/config.example.php` como `api/config.php`.
+   - Edita `api/config.php` y coloca tu usuario y contraseña de PostgreSQL.
+   - Nota: `api/config.php` está en `.gitignore` para no publicar credenciales.
 
 4. **Inicia el servidor PHP:**
    - Abre una terminal en la raíz del proyecto y ejecuta:

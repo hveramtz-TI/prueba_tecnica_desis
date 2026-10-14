@@ -1,4 +1,3 @@
-
 <?php
 // Devuelve lista de monedas (PostgreSQL)
 header('Access-Control-Allow-Origin: *');

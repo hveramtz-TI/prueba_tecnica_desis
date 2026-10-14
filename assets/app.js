@@ -3,7 +3,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     cargarOpciones();
     document.getElementById('bodega').addEventListener('change', function() {
-        cargarSelect('sucursal', 'api/listar_sucursales.php?bodega_id=' + this.value, true);
+        if (!this.value) {
+            // Sin bodega valida: sucursal vuelve a quedar solo con opcion en blanco
+            cargarSelect('sucursal', '', true, true);
+            return;
+        }
+        cargarSelect('sucursal', 'api/listar_sucursales.php?bodega_id=' + encodeURIComponent(this.value), true);
     });
     document.getElementById('guardar').addEventListener('click', validarFormulario);
 });

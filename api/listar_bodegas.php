@@ -1,4 +1,3 @@
-
 <?php
 // Devuelve lista de bodegas (PostgreSQL)
 header('Access-Control-Allow-Origin: *');
